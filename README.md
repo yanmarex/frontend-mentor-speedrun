@@ -6,9 +6,11 @@ Complete as many of the Frontend Master free projects as possible in whatever ti
 
 ## Status
 
-Start Date:  
-End Date:  
-Total Points Earned:
+Start Date: 16/10/2020.
+
+End Date: 23/10/2020.
+
+Total Points Earned: 0
 
 ## Points available
 
