@@ -108,6 +108,7 @@ body {
   height: 30px;
   background-color: var(--light-grayish-blue);
   border-radius: 50%;
+  cursor: pointer;
 }
 .reset-image {
   object-fit: none;
