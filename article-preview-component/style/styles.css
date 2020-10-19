@@ -35,3 +35,16 @@ body {
   justify-content: center;
   align-items: center;
 }
+.card-container {
+  margin-top: 50px;
+  position: relative;
+  width: 320px;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid red;
+  border-radius: 5px;
+  overflow: hidden;
+  justify-content: space-between;
+  background-color: var(--white);
+}
