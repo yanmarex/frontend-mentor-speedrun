@@ -13,3 +13,17 @@
   --font-family: "Manrope", sans-serif;
   --font-size: 16px;
 }
+/*BASE STYLES*/
+img {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+a {
+  color: var(--light-grayish-blue);
+  text-decoration: none;
+}
+body {
+  font-size: var(--font-size);
+  font-family: var(--font-family);
+}
