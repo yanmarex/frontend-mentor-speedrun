@@ -120,7 +120,7 @@ body {
   background-color: var(--grayish-blue-dark);
   width: 100%;
   height: 70px;
-  display: flex;
+  display: none;
   align-items: center;
 }
 .share-text {
@@ -138,4 +138,7 @@ body {
 }
 .pinterest {
   background: url("/images/icon-pinterest.svg") no-repeat center center;
+}
+.is-visible {
+  display: flex;
 }
