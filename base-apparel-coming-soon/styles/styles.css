@@ -63,7 +63,7 @@ body {
   height: 248px;
 }
 .content-container {
-  width: 80%;
+  width: 85%;
   height: auto;
   background-color: aqua;
 }
@@ -74,6 +74,7 @@ body {
   text-align: center;
   padding: 0.3em;
   letter-spacing: 0.2em;
+  line-height: 1em;
 }
 .title-color {
   color: var(--desaturated-red);
@@ -108,7 +109,7 @@ body {
   width: 55px;
   height: 43px;
   background: red;
-  left: 244px;
+  left: 263px;
   bottom: 0px;
   border: transparent;
   outline: none;
