@@ -141,3 +141,43 @@ body {
 .is-visible {
   display: flex;
 }
+@media only screen and (min-width: 665px) {
+  .card-image {
+    width: 100%;
+    height: 100%;
+  }
+  .card-container {
+    position: relative;
+    width: 600px;
+    height: 270px;
+    display: flex;
+    border-radius: 5px;
+    justify-content: space-between;
+    background-color: var(--white);
+    flex-direction: row;
+  }
+  .share-popup {
+    position: absolute;
+    background-color: var(--grayish-blue-dark);
+    width: 220px;
+    height: 56px;
+    align-items: center;
+    top: 113px;
+    left: 378px;
+    border-radius: 11px;
+    z-index: 10;
+  }
+  .share-popup::before {
+    content: " ";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: inherit;
+    top: 46px;
+    left: 111px;
+    transform: rotate(45deg);
+  }
+  .share-btn-principal {
+    display: none;
+  }
+}
