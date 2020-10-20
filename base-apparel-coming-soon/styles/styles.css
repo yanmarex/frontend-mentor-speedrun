@@ -90,8 +90,25 @@ body {
   height: 44px;
   border: 1px solid var(--desaturated-red);
   background-color: transparent;
+  outline: none;
+  padding: 20px;
+  color: var(--desaturated-red);
 }
 ::placeholder {
   color: var(--desaturated-red);
   padding: 20px;
+}
+.form {
+  position: relative;
+}
+.submit-btn {
+  position: absolute;
+  border-radius: 25px;
+  width: 55px;
+  height: 43px;
+  background: red;
+  left: 244px;
+  bottom: 0px;
+  border: transparent;
+  outline: none;
 }

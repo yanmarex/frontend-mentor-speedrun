@@ -30,15 +30,18 @@
             store. Add your email below to stay up-to-date with announcements
             and our launch deals.
           </p>
-          <input
-            pattern="/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/"
-            class="input"
-            type="email"
-            name="email"
-            id="email"
-            placeholder="Email Address"
-            required
-          />
+          <form class="form" action="submit">
+            <input
+              pattern="/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/"
+              class="input"
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Email Address"
+              required
+            />
+            <input class="submit-btn" type="submit" value="" />
+          </form>
         </div>
       </header>
     </main>
