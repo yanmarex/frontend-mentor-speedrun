@@ -10,8 +10,8 @@
   /*Neutral colors*/
   --dark-grayish-red: hsl(0, 6%, 24%);
   /*Gradients*/
-  --linear-first: Linear, 135deg, from hsl(0, 0%, 100%), to hsl(0, 100%, 98%);
-  --linear-second: Linear, 135deg, from hsl(0, 80%, 86%), to hsl(0, 74%, 74%);
+  --linear-first: 135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%);
+  --linear-second: 135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%);
   /*Fonts*/
   --font-size: 16px;
   --font-family: "Josefin Sans", sans-serif;
@@ -34,20 +34,22 @@ body {
   position: relative;
   width: 100vw;
   height: 100vh;
+  justify-content: center;
+  background: url(/base-apparel-coming-soon/images/bg-pattern-desktop.svg);
 }
 .header {
   display: flex;
   flex-direction: column;
   position: relative;
-  width: 100%;
+  width: 375px;
   height: 100%;
   align-items: center;
 }
 .nav {
   display: flex;
-  width: 100%;
+  width: 100vw;
   height: 75px;
-  background-color: white;
+  background-color: transparent;
 }
 .logo {
   display: flex;
@@ -65,7 +67,6 @@ body {
 .content-container {
   width: 85%;
   height: auto;
-  background-color: aqua;
 }
 .title {
   font-size: 2.4em;
@@ -102,15 +103,30 @@ body {
 }
 .form {
   position: relative;
+  max-width: 319px;
 }
 .submit-btn {
   position: absolute;
   border-radius: 25px;
   width: 55px;
   height: 43px;
-  background: red;
+  background: linear-gradient(var(--linear-second));
+  box-shadow: 1px 3px 23px 5px lightgrey;
   left: 263px;
   bottom: 0px;
   border: transparent;
   outline: none;
+}
+.submit-btn:active {
+  background: linear-gradient(var(--linear-first));
+}
+/*INPUTS VALIDATIONS*/
+input[type="email"]:invalid {
+  background: url(/base-apparel-coming-soon/images/icon-error.svg);
+  background-size: 20px;
+  background-repeat: no-repeat;
+  background-position: 223px 11px;
+}
+input[type="email"]:invalid:not(:focus):not(:placeholder-shown) {
+  background: pink;
 }
